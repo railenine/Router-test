@@ -1,7 +1,7 @@
 const initialState = {
     loggedIn: false,
-    news: {
-        toyota: {
+    news: [
+        {
             header: 'В Toyota задумались о постройке нового гиперкара для «Ле-Мана»',
             description: 'В преддверии дебюта соперников японцы изучают возможность серьезного обновления собственной машины',
             img: 'https://cdn-1.motorsport.com/images/amp/0JB8Vpp0/s1000/7-toyota-gazoo-racing-toyota-g.webp',
@@ -9,7 +9,7 @@ const initialState = {
             author: 'Гэри Уоткинс',
             date: '1 июн. 2022 г., 19:22'
         },
-        peugeot: {
+        {
             header: 'Peugeot раскрыла внешность гиперкара 9X8 для «Ле-Мана»',
             description: 'Французская компания официально представила машину, ее окончательную ливрею, а также назвала гонщика, который заменит Кевина Магнуссена',
             img: 'https://cdn-1.motorsport.com/images/amp/68yxENV0/s1000/wec-peugeot-9x8-unveil-2022-pe-2.webp',
@@ -17,7 +17,7 @@ const initialState = {
             author: 'Рахит Тукрал',
             date: '20 мая 2022 г., 18:28'
         },
-        lambo: {
+        {
             header: 'Официально: Lamborghini выступит в топ-классе «Ле-Мана» в 2024 году',
             description: 'Компания создаст прототип LMDh на шасси Ligier',
             img: 'https://cdn-1.motorsport.com/images/amp/254ODWD0/s1000/lamborghini-lmdh-1.webp',
@@ -25,7 +25,7 @@ const initialState = {
             author: 'Гэри Уоткинс',
             date: '17 мая 2022 г., 12:47'
         }
-    }
+    ]
 };
 
 const reducer = (state = initialState, action) => {

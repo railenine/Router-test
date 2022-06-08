@@ -1,19 +1,19 @@
-import { Switch, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Main from "./pages/main/Main";
 import News from "./pages/news/News";
 import Profile from "./pages/profile/Profile";
 import Login from "./pages/login/Login";
 
-const Routes = () => {
+const Routed = () => {
     return (
-        <Switch>
-            <Route path='/' component={Main} exact/>
-            <Route path='/news' component={News} />
-            <Route path='/profile' component={Profile} />
-            <Route path='/login' component={Login} />
-        </Switch>
+        <Routes>
+            <Route path='/' element={<Main />} exact/>
+            <Route path='/news' element={<News />} />
+            <Route path='/profile' element={<Profile />} />
+            <Route path='/login' element={<Login />} />
+        </Routes>
     )
 }
 
-export default Routes;
+export default Routed;

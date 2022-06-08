@@ -23,13 +23,32 @@ const useStyles = makeStyles((theme) => ({
     secondNav: {
         marginRight: '20px'
     },
-    login: {
+    container: {
         padding: theme.spacing(4),
         margin: theme.spacing(2),
         textAlign: 'center'
     },
     btn: {
         margin: theme.spacing(2)
+    },
+    avatar: {
+        height: '200px',
+        width: '200px',
+        margin: '0 auto'
+    },
+    news: {
+        padding: theme.spacing(2),
+        margin: theme.spacing(3),
+        display: 'flex'
+    },
+    img: {
+        width: '40%',
+        borderRadius: '5px'
+    },
+    header: {
+        display: 'inline',
+        marginLeft: theme.spacing(2),
+        width: '50%'
     }
   }));
 

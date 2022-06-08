@@ -2,7 +2,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { ThemeProvider } from "@material-ui/core";
 import { createTheme } from "@material-ui/core";
 
-import Routes from "./Routes";
+import Routed from "./Routes";
 import TopBar from "./components/topBar/TopBar";
 
 const theme = createTheme({
@@ -22,7 +22,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <Router>
           <TopBar />
-          <Routes />
+          <Routed />
         </Router>
       </ThemeProvider>
     </div>
