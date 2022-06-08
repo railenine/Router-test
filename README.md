@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# Внеочередное тестовое задание
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Создание проекта через create-react-app. В планах было реализовать элементарнейшую симуляцию логина через localStorage и Redux (дабы не подтягивать Node.js или json-server). Так же в этом проекте перешел на react-router-dom v6.x.x
 
-## Available Scripts
+## Зависимости
 
-In the project directory, you can run:
+Никаких сверхъестественных зависимостей нет.
+Node.js v14.17.3
 
-### `npm start`
+### Что еще в планах на этот проект
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Реализовать на странице main(/) виджет погоды и курс валют через axios.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Redux
 
-### `npm test`
+Не усложнял по причине того, что никакой сложной логики нет, так же нет необходимости в нескольких reducers (пока что, после добавления логики по погоде и валюте), возможно, разделю.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### MUI 
 
-### `npm run build`
+Считаю эту библиотеку одну из наиудобнейших. Писать с нуля стили не видел смысла, так как тренируюсь и показываю скиллы по реализации логики с помощью React
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Дополнительные фишки, которые вошли/не вошли в результат
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+В коде TopBar.js закомменчена JSX логика, которая позволяет более просто и нативно для юзера определять залогинен он или нет.
+Так же оставил на полке своего локального хранилища отрисовку аватарки пользователя, когда он залогинился, так как с этим возникла некоторая проблема, которую пофиксить не сложно.
